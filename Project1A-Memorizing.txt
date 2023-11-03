@@ -1,0 +1,93 @@
+import java.util.Scanner;
+import java.util.Random;
+
+class Main {
+	public static void main(String[] args) {
+
+		//prompt the user for a number
+		System.out.println("Enter a number.");
+		System.out.println("It should be 0,1, or 2");
+
+		//Read in the user's number
+		Scanner scnr = new Scanner(System.in);
+		int usersNumber = scnr.nextint();
+
+		//Now the program makes a random guess
+		Random rand = new Random();
+		int programsGuess = rand.nextInt(0,3);
+
+		//Check to see if the programs's guess was right
+		if (usersNumber == programsGuess) {
+			System.out.println("It was " + userNumber + "?!");
+			System.out.println("That was my guess!");
+		} else {
+			System.out.println("Argh! I guessed " + programsGuess + "." );
+		}		
+	}
+}
+
+
+import java.util.Scanner;
+import java.util.Random;
+
+class Main {
+	public static void main(String[] args) {
+	
+		//Obtain the user's number
+		System.out.println("Please enter a number");
+		System.out.println("It should be 0, 1, or 2: ");
+
+		//Obtain the number of the user using scanner
+		Scanner scnr = new Scanner(System.in);
+		int userGuess = scnr.nextInt();
+
+		//Obtain the guess of the computer
+		Random rand = new Random();
+		int computerGuess = rand.nextInt(0,3);
+
+		//Check if it is the same
+		if (computerGuess == userGuess) {
+			System.out.println("Was your guess really " + userGuess+ "?!");
+			System.out.println("That was my guess!");
+		} else {
+			Sysmte.out.println("Argh! My guess was " + computerGuess;
+		}
+	}
+}
+
+
+11 minutes: Verbiage is different. I had to look at the original for Scanner and Random initialization
+
+import java.util.Random;
+import java.util.Scanner;
+
+class Main {
+	public static void main(String[] args) {
+		
+		//Prompt the user for a number
+		System.out.println("Please pick a random number");
+		System.out.println("The number should be 0, 1 or 2: ");
+
+		//Prompt the number
+		Scanner scnr = new Scanner(System.in);
+		int userGuess = scnr.nextInt();
+
+		//Prompt the computer guess
+		Random rand = new Random();
+		int computerGuess = rand.nextInt(0,3);
+
+		//Check if the numbers match
+		if (userGuess == computerGuess) {
+			System.out.println("Your guess was " + userGuess + "?!");
+			System.out.println("Wow that was my guess!");
+		} else {
+
+			System.out.println("Argh! My guess was " + computerGuess + ".");
+		}
+		
+	}
+}
+
+11 minutes: Didn't look at the original at all except for initializing rand = new Random();
+
+import.java.

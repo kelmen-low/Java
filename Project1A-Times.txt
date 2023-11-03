@@ -1,0 +1,11 @@
+
+7 minutes: Just copied from the replit
+
+
+11 minutes: Verbiage is different. I had to look at the original for Scanner and Random initialization
+
+
+11 minutes: I didn't look have to look at the original at all except for initializing rand = new Random();
+
+
+10 minutes: I was able to do it without looking at the original
