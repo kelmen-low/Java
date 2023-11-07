@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
-public class LabProgram {
+public class Main {
     public static void main(String[] args) {
 
         Scanner scnr = new Scanner(System.in);
 
-        int average = 0;
-        int max = 0;
+        double average = 0;
+        double max = 0;
         int numInputs = 0;
-        int sums = 0;
-        int input = 0;
+        double sums = 0;
+        double input;
 
         do {
-            input = scnr.nextInt();
+            input = scnr.nextDouble();
             numInputs++;
             sums += input;
 
