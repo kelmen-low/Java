@@ -5,15 +5,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        LicensePlate plate = new LicensePlate("7WHW858", "CA");
-        LicensePlate otherPlate = new LicensePlate("7WsW858", "CA");
-        System.out.println(plate.equals(otherPlate));
-
-        int[] array = {-1,-1};
-        System.out.println(hasNegative(array));
-
         Scanner scnr = new Scanner(System.in);
-        NumberGuesser game = new NumberGuesser();
+        NumberGuesser game = new RandomNumberGuesser();
 
         boolean playAgain = true;
 
@@ -68,23 +61,5 @@ public class Main {
         playAgain = scnr.next();
 
         return playAgain.equals("y");
-    }
-
-    public static boolean hasNegative(int[] array) {
-        boolean hasNegative = false;
-
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] < 0) {
-                hasNegative = true;
-            } else {
-                hasNegative = hasNegative || false;
-            }
-        }
-
-        return hasNegative;
-    }
-
-    public static boolean sameStates (LicensePlate plate1, LicensePlate plate2, LicensePlate plate3) {
-        return plate1.getState().equals(plate2.getState()) && plate2.getState().equals(plate3.getState());
     }
 }

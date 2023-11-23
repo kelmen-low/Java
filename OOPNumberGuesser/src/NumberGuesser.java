@@ -1,9 +1,9 @@
 public class NumberGuesser {
 
     // --- FIELDS ---
-    private int currentGuess;
-    private int upperBound;
-    private int lowerBound;
+    protected int currentGuess;
+    protected int upperBound;
+    protected int lowerBound;
 
     // --- CONSTRUCTORS ---
     public NumberGuesser() {
@@ -28,28 +28,6 @@ public class NumberGuesser {
     public void reset() {
         upperBound = 100;
         lowerBound = 1;
-    }
-
-    // --- SETTERS ---
-    public void setCurrentGuess(int currentGuess) {
-        this.currentGuess = currentGuess;
-    }
-
-    public void setLowerBound(int lowerBound) {
-        this.lowerBound = lowerBound;
-    }
-
-    public void setUpperBound(int upperBound) {
-        this.upperBound = upperBound;
-    }
-
-    // --- GETTERS ---
-    public int getLowerBound() {
-        return lowerBound;
-    }
-
-    public int getUpperBound() {
-        return upperBound;
     }
 
     public int getCurrentGuess() {
