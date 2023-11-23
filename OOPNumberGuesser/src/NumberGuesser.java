@@ -51,6 +51,7 @@ public class NumberGuesser {
     public int getUpperBound() {
         return upperBound;
     }
+
     public int getCurrentGuess() {
 
         //handle the edge case that the guess is 100
@@ -60,4 +61,6 @@ public class NumberGuesser {
         currentGuess = (upperBound + lowerBound) / 2;
         return currentGuess;
     }
+
+
 }
